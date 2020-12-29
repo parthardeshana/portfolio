@@ -268,7 +268,7 @@ hr {
     }
     .navbar-brand {
         margin: 0 auto;
-        padding-left: 62px;
+        padding-left: 0px !important;
     }
     .footer-left, .footer-right, .footer-mid {
         text-align: center;
