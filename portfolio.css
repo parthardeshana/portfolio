@@ -291,7 +291,7 @@ hr {
     .header {
 		background-size: contain;
 		background-position: unset;
-		height: 35vh !important;
+		height: 32vh !important;
     }
     .hire-btn {
 		display: none !important;
@@ -301,7 +301,7 @@ hr {
         margin-left: 2% !important;
     }
     .title p {
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
         margin-bottom: 0.5rem;
         font-weight: 500;
         line-height: 1.2;
