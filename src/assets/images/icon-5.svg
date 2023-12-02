@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="31px" viewBox="0 0 33 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-5</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="bevel">
+        <g id="icon-5" transform="translate(1.135253, 1.439209)" stroke="#F36D45" stroke-width="2">
+            <line x1="15.3981468" y1="8.94649111" x2="15.3981468" y2="17.9215911" id="Path"></line>
+            <line x1="10.9064468" y1="13.4340911" x2="19.8898468" y2="13.4340911" id="Path"></line>
+            <path d="M15.3981468,28.1787911 C15.3981468,28.1787911 -4.81439324,12.2031911 1.07610676,3.81795111 C6.96660676,-4.56729889 15.3981468,3.81795111 15.3981468,3.81795111 C15.3981468,3.81795111 23.7526468,-4.77243889 29.7201468,3.81795111 C35.6876468,12.4083911 15.3981468,28.1787911 15.3981468,28.1787911 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

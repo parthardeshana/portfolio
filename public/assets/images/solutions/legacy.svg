@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="17px" viewBox="0 0 13 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-10</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon-10" transform="translate(0.833500, 1.416750)" stroke="#F36D45" stroke-width="1.41667">
+            <path d="M7.08333,-8.8817842e-16 L1.41666,-8.8817842e-16 C1.04094,-8.8817842e-16 0.6806,0.14925 0.41493,0.41493 C0.14925,0.68061 -8.8817842e-16,1.04094 -8.8817842e-16,1.41666 L-8.8817842e-16,12.74995 C-8.8817842e-16,13.12575 0.14925,13.48605 0.41493,13.75175 C0.6806,14.01745 1.04094,14.16665 1.41666,14.16665 L9.9167,14.16665 C10.2924,14.16665 10.6527,14.01745 10.9184,13.75175 C11.1841,13.48605 11.3333,13.12575 11.3333,12.74995 L11.3333,4.25 L7.08333,-8.8817842e-16 Z" id="Path"></path>
+            <polyline id="Path" points="7.083 -4.4408921e-16 7.083 4.25 11.333 4.25"></polyline>
+            <line x1="8.4997" y1="7.7915" x2="2.833" y2="7.7915" id="Path"></line>
+            <line x1="8.4997" y1="10.62495" x2="2.833" y2="10.62495" id="Path"></line>
+            <polyline id="Path" points="4.24967 4.95825 3.54134 4.95825 2.833 4.95825"></polyline>
+        </g>
+    </g>
+</svg>
