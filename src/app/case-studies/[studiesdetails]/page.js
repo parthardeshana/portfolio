@@ -1,27 +1,23 @@
 "use client";
 //relative path import
 import HeroSection from "@/components/CaseStudy/Details/HeroSection/page";
-import CaseStudyReview from "@/components/CaseStudy/Details/Review/page";
 import Alpha from "@/components/CaseStudy/Details/Alpha/page";
 import Beta from "@/components/CaseStudy/Details/Beta/page";
-import clientReviews from "@/assets/JsonData/ClientReviews.json";
 
 //constant data import
 import { caseStudy_list, case_study_data } from "@/helper/contant";
 import CaseStudyHome from "@/components/CaseStudy/CaseStudyHome";
-import HomeBanner from "@/components/CaseStudy/Details/HomeBanner";
+import CaseStudyHeader from "@/components/Header/CaseStudy/page";
 
 export default function CaseStudyDetails({ params }) {
   const data = caseStudy_list.filter((e) => e.brand === params.studiesdetails);
-  const clientReview = clientReviews.filter(
-    (e) => e.brand.toLowerCase() == params.studiesdetails
-  );
   const banner = case_study_data.filter(
     (e) => e.details.pathname === params.studiesdetails
   );
 
   return (
     <>
+      <CaseStudyHeader />
       <section className="case-study-home-banner">
         <CaseStudyHome
           img={banner[0].details.img.src}

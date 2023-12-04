@@ -1,6 +1,5 @@
 import { Outfit, Oswald } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 
 //relative path import
 import Layout from "@/components/Layout/page";
@@ -18,7 +17,7 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  title: "TechniThunder - Crafting Brilliance",
+  title: "Front End Developer - Parth ",
   description: "web development company",
 };
 

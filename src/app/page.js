@@ -1,48 +1,15 @@
 "use client";
-import { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+
+import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Slider from "react-slick";
-//relative path import
-import VideoPlayer from "@/components/VideoPlayer/page";
-import SliderComponent from "@/components/Slider/page";
-import Project from "@/components/ProjectSlider/page";
-import CustomArrow from "@/components/CustomArrow/page";
-//constant data import
-import clientReviews from "../assets/JsonData/ClientReviews.json";
+
 import Header from "@/components/Header/page";
 import CaseStudyHome from "@/components/CaseStudy/CaseStudyHome";
 import { case_study_data } from "@/helper/contant";
 import CTAForm from "@/components/CTAForm/page";
 
 export default function Home() {
-  const pathname = usePathname();
   const router = useRouter();
-  useEffect(() => {
-    if (pathname == "/") {
-      function toggleScrollTop() {
-        let solution1 = document.querySelector(".home-solutions-item.one");
-        let solution2 = document.querySelector(".home-solutions-item.two");
-        let solution3 = document.querySelector(".home-solutions-item.three");
-        if (window.scrollY > 500) {
-          solution1?.classList?.add("active");
-        } else {
-          solution1?.classList?.remove("active");
-        }
-        if (window.scrollY > 900) {
-          solution2?.classList?.add("active");
-        } else {
-          solution2?.classList?.remove("active");
-        }
-        if (window.scrollY > 1300) {
-          solution3?.classList?.add("active");
-        } else {
-          solution3?.classList?.remove("active");
-        }
-      }
-      document.addEventListener("scroll", toggleScrollTop);
-    }
-  }, [pathname]);
 
   const handleBlog = (pathname) => {
     router.push(`/case-studies/${pathname}`);
@@ -52,10 +19,7 @@ export default function Home() {
     <div>
       <Header />
       <div style={{ marginTop: 50 }}>
-        <CaseStudyHome
-          title="Parth Patel"
-          description="I'm frontend developer"
-        />
+        <CaseStudyHome title="Parth P." description="I'm frontend developer" />
       </div>
 
       <section id="service-exp">
@@ -164,7 +128,7 @@ export default function Home() {
         <section style={{ paddingTop: 50 }}>
           <CTAForm
             title1="PARTNER FOR YOUR PROJECT?"
-            title2="WE ARE READY!"
+            title2="I AM READY!"
             subtitle="GET IN TOUCH"
           />
         </section>

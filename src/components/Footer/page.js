@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-lg=6 col-md-6 col-sm-6 col-12">
-            <h6> Made Love with Parth</h6>
+            <h6>Made Love with Parth</h6>
           </div>
           <div className="col-lg=6 col-md-6 col-sm-6 col-12">
             <ul className="footer-social-media">
@@ -24,15 +24,6 @@ export default function Footer() {
                   href="https://wa.me/919537630281"
                 >
                   <i class="bi bi-whatsapp"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  aria-label="linkedin-logo"
-                  href="https://github.com/parthardeshana"
-                >
-                  <i class="bi bi-github"></i>
                 </a>
               </li>
             </ul>

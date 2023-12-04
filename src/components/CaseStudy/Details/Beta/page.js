@@ -2,7 +2,7 @@ import Image from "next/image";
 const Beta = ({ id, name, description, image }) => {
   return (
     <div>
-      <section id="cs-need mb-3">
+      <section id="cs-need">
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
@@ -17,7 +17,7 @@ const Beta = ({ id, name, description, image }) => {
           </div>
         </div>
       </section>
-      <section id="cs-result">
+      <section id="cs-result" style={{ marginBottom: 60 }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-6 col-xs-12 col-12">

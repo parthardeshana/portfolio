@@ -3,10 +3,8 @@ export default function CaseStudyHome({ title, description, img }) {
     <div
       className="case-study-banner rocket-lazyload lazyloaded case-study-banner-img"
       style={{
-        background: `url(${
-          img ??
-          "https://www.openxcell.com/wp-content/uploads/2023/09/banner-7.jpg"
-        })`,
+        background: `url(${img ?? "/assets/images/banner.jpg"})`,
+        backgroundSize: "contain",
       }}
     >
       <div className="container">
