@@ -30,7 +30,7 @@ export default function CaseStudyHeader() {
               className="fs-5 fw-bold text-uppercase"
               aria-label="brandlogo"
             >
-              Frontend Developer
+              <span style={{ color: "#f36d45" }}>Frontend</span> Developer
             </span>
           </Link>
           <button
@@ -47,7 +47,7 @@ export default function CaseStudyHeader() {
             className="navbar-collapse collapse  main-nav justify-content-end "
             id="collapseExample"
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav d-flex  align-items-center ">
               <li className="nav-item">
                 <Link href="/" className="nav-link">
                   Portfolio
@@ -61,6 +61,11 @@ export default function CaseStudyHeader() {
               <li className="nav-item">
                 <Link href="/" className="nav-link">
                   Contact Me
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/" className="nav-link">
+                  <button className="primary-btn fw-bold">hire me</button>
                 </Link>
               </li>
             </ul>

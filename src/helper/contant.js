@@ -1,9 +1,8 @@
-import PLANET_CARD_HERO from "@/assets/images/Portfolio/Planet/PlanetCardHero.png";
-import EDTECH_CARD_HERO from "@/assets/images/Portfolio/Nextgen/EdtechCardHero.png";
-import FIANANCE_1 from "@/assets/images/Portfolio/finance1.png";
-import HEALTHCARE from "@/assets/images/Portfolio/healthCare.png";
-import ECOM1 from "@/assets/images/Portfolio/ecom1.png";
-import ENTER from "@/assets/images/Portfolio/enter.png";
+import PLANET_CARD_HERO from "@/assets/images/Portfolio/Planet/fitness.png";
+import EDTECH_CARD_HERO from "@/assets/images/Portfolio/Nextgen/education.png";
+import HEALTHCARE from "@/assets/images/Portfolio/healthcare.png";
+import ECOM1 from "@/assets/images/Portfolio/ecomm.png";
+import ENTER from "@/assets/images/Portfolio/Bossalabs/party.png";
 import DkarePrimaryImage from "@/assets/images/Portfolio/D-kare/D_HOME.webp";
 import Dkare2 from "@/assets/images/Portfolio/D-kare/D2.png";
 import N1 from "@/assets/images/Portfolio/Nextgen/n1.png";
@@ -19,7 +18,13 @@ import PLANET4 from "@/assets/images/Portfolio/Planet/P4.png";
 import GROUP3 from "@/assets/images/Portfolio/Bossalabs/Group3.png";
 import GROUP4 from "@/assets/images/Portfolio/Bossalabs/Group4.png";
 import GROUP5 from "@/assets/images/Portfolio/Bossalabs/Group5.png";
-
+import CHURCH from "@/assets/images/Portfolio/church.png";
+import CHURCH1 from "@/assets/images/Portfolio/church1.png";
+import CHURCH2 from "@/assets/images/Portfolio/church2.png";
+import CHURCH3 from "@/assets/images/Portfolio/church3.png";
+import CHURCH4 from "@/assets/images/Portfolio/church4.png";
+import CHURCH5 from "@/assets/images/Portfolio/church5.png";
+import CHURCH6 from "@/assets/images/Portfolio/church6.png";
 import HOME_BANNER from "@/assets/images/banner-3-scaled.png";
 import PHYSIO1 from "@/assets/images/Portfolio/physio-cafe/P1.png";
 import PHYSIO2 from "@/assets/images/Portfolio/physio-cafe/P2.png";
@@ -35,7 +40,7 @@ export const case_study_data = [
       alt: "planet card hero",
       tag: "Fitness",
       title: "Elevent your fitness game-planet fitness",
-      tech_tag: ["Android", "iOS", "Node", "React"],
+      tech_tag: ["Node", "React Native"],
       pathname: "planet",
       description:
         "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly",
@@ -50,7 +55,7 @@ export const case_study_data = [
       alt: "enter",
       tag: "Entertainment",
       title: "A Smart Cutting board with live classes firmware",
-      tech_tag: ["Android", "iOS", "Node", "React"],
+      tech_tag: ["React", "Python", "Django"],
       pathname: "bossalabs",
       description:
         "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly.",
@@ -64,7 +69,7 @@ export const case_study_data = [
       alt: "edtech card hero",
       tag: "Ed-tech",
       title: "Level up your coding skills with nextgen tutorial",
-      tech_tag: ["Android", "iOS", "Node", "React"],
+      tech_tag: ["React", "Python", "Django"],
       pathname: "nextgen",
       description:
         "Nextgen Tutorial is an innovative freemium educational website, dedicated to providing a comprehensive and interactive platform for learning coding and web development",
@@ -78,10 +83,24 @@ export const case_study_data = [
       alt: "ecom1",
       tag: "E-commerce",
       title: "Nourish your life naturally - D-kare",
-      tech_tag: ["Android", "iOS", "Node", "React"],
+      tech_tag: ["React", "Node"],
       pathname: "d-kare",
       description:
         "D-Kare is a prominent herbal e-commerce online store, renowned for its diverse range of unadulterated juices, flavorful drinks, wellness products, beauty products, hair care, herbal oils, and other offerings",
+    },
+    isSelected: false,
+  },
+  {
+    name: "Church Managment System",
+    details: {
+      img: CHURCH,
+      alt: "church",
+      tag: "Communication",
+      title: "Church Managment System",
+      tech_tag: ["React", "Node"],
+      pathname: "text-in-church",
+      description:
+        "Text In Church transformed the Church Community Builder project, seamlessly addressing communication challenges. With automated workflows and user-friendly features, it led to increased attendance, deeper relationships, and improved engagement. This integration streamlined operations, optimizing overall performance and contributing to the project's success.",
     },
     isSelected: false,
   },
@@ -106,11 +125,11 @@ export const case_study_data = [
       img: HEALTHCARE,
       alt: "healthcare",
       tag: "Healthcare & Wellness",
-      title: "Nourish your life naturally - D-kare",
-      tech_tag: ["Android", "iOS", "Node", "React"],
+      title: "Crafting a Healthier Tomorrow for You - PhysioCafe",
+      tech_tag: ["React", "Node", "iOS", "Android"],
       pathname: "physiocafe",
       description:
-        "D-Kare is a prominent herbal e-commerce online store, renowned for its diverse range of unadulterated juices, flavorful drinks, wellness products, beauty products, hair care, herbal oils, and other offerings",
+        "In response to the challenges within the healthcare system, PhysioCafe emerged with a mission to streamline doctor appointments and enhance doctor-patient relationships. Focused on optimizing appointment scheduling, ensuring data security, and creating user-friendly interfaces, PhysioCafe's dedicated team successfully delivered a groundbreaking web app.",
     },
     isSelected: false,
   },
@@ -119,7 +138,6 @@ export const case_study_data = [
 export const caseStudy_list = [
   {
     brand: "d-kare",
-
     hero: {
       title: "NOURISH YOUR LIFE, NATURALLY - D KARE",
       description:
@@ -317,10 +335,10 @@ export const caseStudy_list = [
   {
     brand: "physiocafe",
     hero: {
-      title: "NOURISH YOUR LIFE, NATURALLY - D KARE",
+      title: "Crafting a Healthier Tomorrow for You - PhysioCafe",
       description:
-        "D-Kare is a prominent herbal e-commerce online store, renowned for its diverse range of unadulterated juices, flavorful drinks, wellness products, beauty products, hair care, herbal oils, and other offerings.",
-      industry_type: "Wellness",
+        "In response to the challenges within the healthcare system, PhysioCafe emerged with a mission to streamline doctor appointments and enhance doctor-patient relationships. Focused on optimizing appointment scheduling, ensuring data security, and creating user-friendly interfaces, PhysioCafe's dedicated team successfully delivered a groundbreaking web app.",
+      industry_type: "Healthcare",
       img: PHYSIO5,
     },
     backStory: {
@@ -328,8 +346,8 @@ export const caseStudy_list = [
       title: "Backstory",
       img: PHYSIO1,
       description: [
-        "With a growing customer base and changing market trends, D-Kare embraced digital transformation to reach a wider audience and offer a convenient shopping experience.",
-        "The software development project aimed to align their e-commerce platform with their mission of promoting balance and wellness through natural products. Agile methodologies and collaboration were key to success.",
+        "The inception of PhysioCafe stemmed from the need to address challenges within the healthcare system, specifically in managing doctor appointments and improving doctor-patient relationships. With a vision to streamline the appointment process and enhance communication between healthcare providers and patients, PhysioCafe was conceived.",
+        "Creating a comprehensive Doctor Appointment and Doctors-Patient Management Web App presented multifaceted challenges. These challenges included optimizing appointment scheduling, ensuring data security and privacy, and creating a user-friendly interface for both doctors and patients. The team at PhysioCafe, driven by a shared commitment to improving healthcare accessibility, successfully navigated these challenges and launched a groundbreaking web app.",
       ],
     },
     challange: {
@@ -337,8 +355,11 @@ export const caseStudy_list = [
       title: "Challange",
       img: PHYSIO2,
       description: [
-        "The lack of online accessibility may have hindered D-Kare's ability to keep up with changing market trends and consumer preferences, potentially affecting their competitiveness in the industry.",
-        "The absence of an online presence limited their reach, making it challenging to tap into a broader customer base beyond their local markets.",
+        "The traditional healthcare appointment system often leads to inefficiencies, long waiting times, and difficulty in managing patient information. Lack of effective communication channels between doctors and patients further exacerbates these issues. PhysioCafe aimed to revolutionize this by creating a web app that streamlines the appointment process, facilitates better communication, and improves overall doctor-patient management.",
+        "TECHNOLOGIES OFFERED",
+        "Cutting-edge appointment scheduling algorithms",
+        "Secure patient data management system",
+        "User-friendly interface for doctors and patients",
       ],
     },
     solution: {
@@ -346,8 +367,8 @@ export const caseStudy_list = [
       title: "Solution",
       img: PHYSIO3,
       description: [
-        "To address the growing customer base and changing market trends, D-Kare adopted digital transformation, creating a user-friendly e-commerce platform.",
-        "Agile methodologies and collaboration ensured successful development, aligning with their mission of promoting balance and wellness through natural products. The platform integrated with existing systems, prioritized data security, and embraced customer feedback for continuous improvement.",
+        "PhysioCafe addressed the challenges by implementing advanced appointment scheduling algorithms, ensuring secure and compliant data management, and creating an intuitive interface. The web app allowed patients to easily schedule appointments, receive timely reminders, and provide essential health information beforehand.",
+        "Doctors benefited from a centralized platform for managing appointments, accessing patient records securely, and maintaining effective communication. The inclusion of telemedicine features further enhanced the accessibility of healthcare services.",
       ],
     },
     result: {
@@ -355,12 +376,85 @@ export const caseStudy_list = [
       title: "Result",
       img: PHYSIO4,
       description: [
-        "35% increase in website traffic within the first three months of its launch.",
-        "50% increase in new customer registrations compared to the same period in the previous year.",
-        "60% increase in online sales, demonstrating the platform's effectiveness in converting website visitors into paying customers.",
-        "30% increase in brand searches and mentions on social media",
-        "As a result of the platform's success, D-Kare's overall revenue witnessed a significant surge of 45% in the first year of its implementation.",
+        "25% reduction in appointment wait times",
+        "30% improvement in overall patient satisfaction",
+        "45% increase in the efficiency of doctor-patient communication",
+        "90% of doctors reported improved ease of managing appointments and patient information",
       ],
     },
   },
+  {
+    brand: "text-in-church",
+    hero: {
+      title: "Church management system",
+      description:
+        "Text In Church transformed the Church Community Builder project, seamlessly addressing communication challenges. With automated workflows and user-friendly features, it led to increased attendance, deeper relationships, and improved engagement. This integration streamlined operations, optimizing overall performance and contributing to the project's success.",
+      industry_type: "Chuch",
+      img: CHURCH1,
+    },
+    backStory: {
+      id: 1,
+      title: "Backstory",
+      img: CHURCH2,
+      description: [
+        "The Church Community Builder project embarked on a journey to redefine communication within the church community.",
+        "Despite adopting cutting-edge technologies like React.js, Redux, HTML, CSS, Bootstrap, and Git, the project recognized the need for a specialized communication tool. This led to the integration of Text In Church, a platform designed to elevate church engagement to new heights.",
+      ],
+    },
+    challange: {
+      id: 2,
+      title: "Challange",
+      img: CHURCH3,
+      description: [
+        "The Church Community Builder project faced challenges in establishing seamless communication channels and maintaining consistent connectivity.",
+        "Traditional methods fell short, demanding a solution that could automate workflows, integrate with other management tools, and enhance user engagement.",
+      ],
+    },
+    solution: {
+      id: 3,
+      title: "Solution",
+      img: CHURCH4,
+      description: [
+        "Text In Church seamlessly addressed these challenges, offering a range of features tailored to enhance communication within the church",
+        "Automated Messaging Workflows",
+        "Welcome Messages: Automated greetings for newcomers, providing a warm introduction to the church community. Event Reminders: Timely notifications about upcoming events, boosting attendance and participation. Sermon Follow-ups: Automated messages post-sermons, promoting continuous engagement and reflection.",
+      ],
+    },
+    result: {
+      id: 4,
+      title: "Result",
+      img: CHURCH5,
+      description: [
+        "Achieved a 23% surge with timely reminders and personalized engagement.",
+        "Realized a 37% increase in consistent communication among leaders and members.",
+        "Enhanced efficiency by 45% through real-time messaging and event follow-ups.",
+        "Boosted interaction by 31% with Text In Church's reviews and ratings.",
+        "Reduced manual efforts by 27% through seamless integrations.",
+        "Improved platform performance by 33% with analytics and reporting tools.",
+      ],
+    },
+  },
+];
+
+export const technology_1 = [
+  "Python",
+  "React JS",
+  "Node JS",
+  "JavaScript",
+  "React Native",
+  "DJango",
+  "JavaScript",
+  "React JS",
+];
+
+export const technology_2 = [
+  "Vue JS",
+  "Next JS",
+  "Android",
+  "iOS",
+  "TypeScript",
+  "Flask",
+  "Next JS",
+  "TypeScript",
+  "Android",
 ];

@@ -4,9 +4,10 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 import Header from "@/components/Header/page";
-import CaseStudyHome from "@/components/CaseStudy/CaseStudyHome";
 import { case_study_data } from "@/helper/contant";
 import CTAForm from "@/components/CTAForm/page";
+import Main from "@/components/Main/page";
+import Technology from "@/components/Technology/page";
 
 export default function Home() {
   const router = useRouter();
@@ -18,20 +19,23 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div style={{ marginTop: 50 }}>
+      {/* <div style={{ marginTop: 50 }}>
         <CaseStudyHome title="Parth P." description="I'm frontend developer" />
+      </div> */}
+      <div>
+        <Main description="I'm frontend developer" />
       </div>
 
-      <section id="service-exp">
+      <section id="service-exp" style={{ marginTop: 100 }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-12">
               <div className="service-exp-head">
                 <h2>Technology Expertise</h2>
                 <p>
-                  We are proficient in handling emerging technologies to help
-                  you build innovative enterprise-grade products and take your
-                  business to profitability 2x faster.
+                  I'm a React.js and JavaScript expert with 6+ years of
+                  experience in frontend development.where innovation meets
+                  elegance in every line of code
                 </p>
               </div>
             </div>
@@ -122,6 +126,10 @@ export default function Home() {
             })}
           </div>
         </div>
+      </section>
+
+      <section className="my-5">
+        <Technology />
       </section>
 
       <div id="contact-us" style={{ backgroundColor: "#e7f1f7", padding: 30 }}>

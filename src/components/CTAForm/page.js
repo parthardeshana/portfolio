@@ -11,10 +11,21 @@ export default function CTAForm({ title1, title2, subtitle }) {
   });
 
   const onSave = async (data) => {
+    const formData = new FormData();
+    formData.append("name", data.firstName);
+    formData.append("email", data.email);
+    formData.append("phone", data.phone);
+    formData.append("description", data.description);
+    formData.append("service", "");
+
     await axios
-      .post(`${process.env.NEXT_PUBLIC_URL}/api/v1/form/cta-qouteForm`, data)
+      .post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/send-email/`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
       .then((res) => {
-        if (res.data.status === "success") {
+        if (res.data) {
           reset();
         }
       })
@@ -61,25 +72,8 @@ export default function CTAForm({ title1, title2, subtitle }) {
             <div className="col-lg-12 col-sm-12 col-xs-12 col-12">
               <p>
                 <label htmlFor="phoneNo">Your Phone Number</label>
-                <span>
-                  <select id="phoneNo" {...register("country")}>
-                    <option value="india">India (+91)</option>
-                    {List.map((opt, index) => (
-                      <option
-                        key={index}
-                        onClick={() => console.log("Clicked", opt)}
-                        value={opt.value}
-                      >
-                        {opt.label} ({opt.value})
-                      </option>
-                    ))}
-                  </select>
-                  <em>
-                    {/* +91 */}
-                    <span></span>
-                    <input id="phoneNo" type="number" {...register("phone")} />
-                  </em>
-                </span>
+
+                <input id="phoneNo" type="number" {...register("phone")} />
               </p>
             </div>
             <div className="col-lg-12 col-sm-12 col-xs-12 col-12">

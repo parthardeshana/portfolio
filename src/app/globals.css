@@ -1825,7 +1825,7 @@ button.btn.animated-btn:hover strong:before {
   overflow: hidden;
   position: relative;
   padding: 20px;
-  height: 550px;
+  height: 600px;
   background-size: 55%;
   background-repeat: no-repeat;
   display: flex;
@@ -1836,7 +1836,7 @@ button.btn.animated-btn:hover strong:before {
   position: absolute;
   content: "";
   width: 100%;
-  left: 45%;
+  left: 37%;
   top: -37%;
   background-color: #282a37;
   transform: rotate(23deg);
@@ -5539,6 +5539,56 @@ h2.title-industry-expe {
   .banner-content {
     flex: 0 0 auto;
     width: 50%;
-    margin: auto 650px;
+    margin: auto 558px;
   }
+}
+.main-section-bg-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 90vh;
+  background: url("../assets/images/main-1.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .main-section-bg-image {
+    background: url("../assets/images/main-1.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .main-section-bg-image {
+    background: url("../assets/images/main-2.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    align-items: flex-start;
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-section-bg-image {
+    height: 80vh;
+    align-items: flex-start;
+    padding-top: 150px;
+  }
+}
+
+.marquee-text:hover {
+  color: #f36d45;
+}
+.marquee-text {
+  margin-right: 100px;
+  --tw-text-opacity: 1;
+  color: rgb(194 199 204 / var(--tw-text-opacity));
 }

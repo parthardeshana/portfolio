@@ -22,6 +22,7 @@ export default function CaseStudyDetails({ params }) {
         <CaseStudyHome
           img={banner[0].details.img.src}
           title={banner[0].details.title}
+          techStack={banner[0].details.tech_tag}
           // description="Reduce development costs to increase profits without compromise. With a huge pool of talented and experienced technology experts."
         />
       </section>

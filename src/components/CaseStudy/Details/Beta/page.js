@@ -23,10 +23,13 @@ const Beta = ({ id, name, description, image }) => {
             <div className="col-lg-6 col-sm-6 col-xs-12 col-12">
               <ul className="circle-list-style">
                 {description?.map((des, index) => (
-                  <div style={{ display: "flex" }}>
-                    <i class="bi bi-caret-right-fill"></i>
+                  <div style={{ display: "flex" }} key={index}>
+                    <i
+                      class="bi bi-check-circle-fill"
+                      style={{ color: "#f36d45", fontSize: "22px" }}
+                    ></i>
                     <div>
-                      <li key={index}> {des}</li>
+                      <li> {des}</li>
                     </div>
                   </div>
                 ))}

@@ -59,11 +59,11 @@ export default function ScrollToTop() {
                 y2="100%"
                 id="nfgdlth7la"
               >
-                <stop stop-color="#00E676" offset="0%"></stop>
-                <stop stop-color="#00AD59" offset="100%"></stop>
+                <stop stopColor="#00E676" offset="0%"></stop>
+                <stop stopColor="#00AD59" offset="100%"></stop>
               </linearGradient>
             </defs>
-            <g fill-rule="nonzero" fill="none">
+            <g fillRule="nonzero" fill="none">
               <path
                 d="m6.584 21.622.408.202a10.722 10.722 0 0 0 5.508 1.487c5.966-.014 10.868-4.89 10.868-10.81 0-2.862-1.145-5.61-3.182-7.636a10.87 10.87 0 0 0-7.707-3.2c-5.939 0-10.825 4.85-10.825 10.743v.14a11.025 11.025 0 0 0 1.634 5.675l.273.405-1.09 3.987 4.113-.993z"
                 fill="url(#nfgdlth7la)"

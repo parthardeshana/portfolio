@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-lg=6 col-md-6 col-sm-6 col-12">
-            <h6>Made Love with Parth</h6>
+            <p className="fs-6">Made Love with Parth A</p>
           </div>
           <div className="col-lg=6 col-md-6 col-sm-6 col-12">
             <ul className="footer-social-media">
@@ -23,7 +23,7 @@ export default function Footer() {
                   aria-label="linkedin-logo"
                   href="https://wa.me/919537630281"
                 >
-                  <i class="bi bi-whatsapp"></i>
+                  <i className="bi bi-whatsapp"></i>
                 </a>
               </li>
             </ul>

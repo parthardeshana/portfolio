@@ -30,7 +30,7 @@ export default function Header() {
               className="fs-5 fw-bold text-uppercase"
               aria-label="brandlogo"
             >
-              Frontend Developer
+              <span style={{ color: "#f36d45" }}>Frontend</span> Developer
             </span>
           </Link>
           <button
@@ -44,10 +44,10 @@ export default function Header() {
             <span className="navbar-toggler-icon" />
           </button>
           <div
-            className="navbar-collapse collapse  main-nav justify-content-end "
+            className="navbar-collapse collapse  main-nav justify-content-end"
             id="collapseExample"
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav d-flex align-items-center">
               <li className="nav-item">
                 <a href="#case-study-section" className="nav-link">
                   Portfolio
@@ -61,6 +61,11 @@ export default function Header() {
               <li className="nav-item">
                 <a href={"#contact-us"} className="nav-link">
                   Contact Me
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href={"#contact-us"} className="nav-link">
+                  <button className="primary-btn fw-bold">hire me</button>
                 </a>
               </li>
             </ul>
