@@ -33,9 +33,9 @@ export default function Home() {
               <div className="service-exp-head">
                 <h2>Technology Expertise</h2>
                 <p>
-                  I'm a React.js and JavaScript expert with 6+ years of
+                  {`I'm a React.js and JavaScript expert with 6+ years of
                   experience in frontend development.where innovation meets
-                  elegance in every line of code
+                  elegance in every line of code`}
                 </p>
               </div>
             </div>
