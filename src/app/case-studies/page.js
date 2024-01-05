@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 //contant data import
-import { case_study_data } from "@/helper/contant";
+import { case_study_data } from "@/helper/constant";
 import { useRouter } from "next/navigation";
 import CaseStudyHome from "@/components/CaseStudy/CaseStudyHome";
 

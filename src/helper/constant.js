@@ -1,6 +1,6 @@
 import PLANET_CARD_HERO from "@/assets/images/Portfolio/Planet/fitness.png";
 import EDTECH_CARD_HERO from "@/assets/images/Portfolio/Nextgen/education.png";
-import HEALTHCARE from "@/assets/images/Portfolio/healthcare.png";
+import HEALTHCARE from "@/assets/images/Portfolio/healthCare.png";
 import ECOM1 from "@/assets/images/Portfolio/ecomm.png";
 import ENTER from "@/assets/images/Portfolio/Bossalabs/party.png";
 import DkarePrimaryImage from "@/assets/images/Portfolio/D-kare/D_HOME.webp";
@@ -104,20 +104,6 @@ export const case_study_data = [
     },
     isSelected: false,
   },
-  // {
-  //   name: "Finance",
-  //   details: {
-  //     img: FIANANCE_1,
-  //     alt: "finance1",
-  //     tag: "Finance",
-  //     title: "Nourish your life naturally - D-kare",
-  //     tech_tag: ["Android", "iOS", "Node", "React"],
-  //     pathname: "d-kare",
-  //     description:
-  //       "D-Kare is a prominent herbal e-commerce online store, renowned for its diverse range of unadulterated juices, flavorful drinks, wellness products, beauty products, hair care, herbal oils, and other offerings",
-  //   },
-  //   isSelected: false,
-  // },
 
   {
     name: "Healthcare & Wellness",

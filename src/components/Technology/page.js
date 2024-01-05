@@ -1,4 +1,4 @@
-import { technology_1, technology_2 } from "@/helper/contant";
+import { technology_1, technology_2 } from "@/helper/constant";
 import Marquee from "react-fast-marquee";
 
 export default function Technology() {

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 import Header from "@/components/Header/page";
-import { case_study_data } from "@/helper/contant";
+import { case_study_data } from "@/helper/constant";
 import CTAForm from "@/components/CTAForm/page";
 import Main from "@/components/Main/page";
 import Technology from "@/components/Technology/page";

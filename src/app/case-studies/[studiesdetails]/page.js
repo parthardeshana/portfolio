@@ -5,7 +5,7 @@ import Alpha from "@/components/CaseStudy/Details/Alpha/page";
 import Beta from "@/components/CaseStudy/Details/Beta/page";
 
 //constant data import
-import { caseStudy_list, case_study_data } from "@/helper/contant";
+import { caseStudy_list, case_study_data } from "@/helper/constant";
 import CaseStudyHome from "@/components/CaseStudy/CaseStudyHome";
 import CaseStudyHeader from "@/components/Header/CaseStudy/page";
 
