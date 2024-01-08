@@ -63,11 +63,10 @@ export default function CaseStudyHeader() {
                   Contact Me
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link href="/" className="nav-link">
-                  <button className="primary-btn fw-bold">hire me</button>
-                </Link>
-              </li>
+
+              <Link href="/" className="nav-link">
+                <button className="primary-btn fw-bold">hire me</button>
+              </Link>
             </ul>
           </div>
         </div>

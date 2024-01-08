@@ -10,11 +10,11 @@ import N2 from "@/assets/images/Portfolio/Nextgen/n2.png";
 import N3 from "@/assets/images/Portfolio/Nextgen/n3.png";
 import N4 from "@/assets/images/Portfolio/Nextgen/n4.png";
 import N5 from "@/assets/images/Portfolio/Nextgen/n5.png";
-import PLANETPRIMARY from "@/assets/images/Portfolio/Planet/P_Home.png";
-import PLANET1 from "@/assets/images/Portfolio/Planet/P1.png";
-import PLANET2 from "@/assets/images/Portfolio/Planet/P2.png";
-import PLANET3 from "@/assets/images/Portfolio/Planet/P3.png";
-import PLANET4 from "@/assets/images/Portfolio/Planet/P4.png";
+// import PLANETPRIMARY from "@/assets/images/Portfolio/Planet/P_Home.png";
+// import PLANET1 from "@/assets/images/Portfolio/Planet/P1.png";
+// import PLANET2 from "@/assets/images/Portfolio/Planet/P2.png";
+// import PLANET3 from "@/assets/images/Portfolio/Planet/P3.png";
+// import PLANET4 from "@/assets/images/Portfolio/Planet/P4.png";
 import GROUP3 from "@/assets/images/Portfolio/Bossalabs/Group3.png";
 import GROUP4 from "@/assets/images/Portfolio/Bossalabs/Group4.png";
 import GROUP5 from "@/assets/images/Portfolio/Bossalabs/Group5.png";
@@ -24,8 +24,8 @@ import CHURCH2 from "@/assets/images/Portfolio/church2.png";
 import CHURCH3 from "@/assets/images/Portfolio/church3.png";
 import CHURCH4 from "@/assets/images/Portfolio/church4.png";
 import CHURCH5 from "@/assets/images/Portfolio/church5.png";
-import CHURCH6 from "@/assets/images/Portfolio/church6.png";
-import HOME_BANNER from "@/assets/images/banner-3-scaled.png";
+// import CHURCH6 from "@/assets/images/Portfolio/church6.png";
+// import HOME_BANNER from "@/assets/images/banner-3-scaled.png";
 import PHYSIO1 from "@/assets/images/Portfolio/physio-cafe/P1.png";
 import PHYSIO2 from "@/assets/images/Portfolio/physio-cafe/P2.png";
 import PHYSIO3 from "@/assets/images/Portfolio/physio-cafe/P3.png";
@@ -33,20 +33,20 @@ import PHYSIO4 from "@/assets/images/Portfolio/physio-cafe/P4.png";
 import PHYSIO5 from "@/assets/images/Portfolio/physio-cafe/P5.png";
 
 export const case_study_data = [
-  {
-    name: "Fitness",
-    details: {
-      img: PLANET_CARD_HERO,
-      alt: "planet card hero",
-      tag: "Fitness",
-      title: "Elevent your fitness game-planet fitness",
-      tech_tag: ["Node", "React Native"],
-      pathname: "planet",
-      description:
-        "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly",
-    },
-    isSelected: true,
-  },
+  // {
+  //   name: "Fitness",
+  //   details: {
+  //     img: PLANET_CARD_HERO,
+  //     alt: "planet card hero",
+  //     tag: "Fitness",
+  //     title: "Elevent your fitness game-planet fitness",
+  //     tech_tag: ["Node", "React Native"],
+  //     pathname: "planet",
+  //     description:
+  //       "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly",
+  //   },
+  //   isSelected: true,
+  // },
 
   {
     name: "Entertainment",
@@ -83,7 +83,7 @@ export const case_study_data = [
       alt: "ecom1",
       tag: "E-commerce",
       title: "Nourish your life naturally - D-kare",
-      tech_tag: ["React", "Node"],
+      tech_tag: ["Next", "Node"],
       pathname: "d-kare",
       description:
         "D-Kare is a prominent herbal e-commerce online store, renowned for its diverse range of unadulterated juices, flavorful drinks, wellness products, beauty products, hair care, herbal oils, and other offerings",
@@ -97,7 +97,7 @@ export const case_study_data = [
       alt: "church",
       tag: "Communication",
       title: "Church Managment System",
-      tech_tag: ["React", "Node"],
+      tech_tag: ["React", "PHP"],
       pathname: "text-in-church",
       description:
         "Text In Church transformed the Church Community Builder project, seamlessly addressing communication challenges. With automated workflows and user-friendly features, it led to increased attendance, deeper relationships, and improved engagement. This integration streamlined operations, optimizing overall performance and contributing to the project's success.",
@@ -112,7 +112,7 @@ export const case_study_data = [
       alt: "healthcare",
       tag: "Healthcare & Wellness",
       title: "Crafting a Healthier Tomorrow for You - PhysioCafe",
-      tech_tag: ["React", "Node", "iOS", "Android"],
+      tech_tag: ["React", "Node"],
       pathname: "physiocafe",
       description:
         "In response to the challenges within the healthcare system, PhysioCafe emerged with a mission to streamline doctor appointments and enhance doctor-patient relationships. Focused on optimizing appointment scheduling, ensuring data security, and creating user-friendly interfaces, PhysioCafe's dedicated team successfully delivered a groundbreaking web app.",
@@ -219,57 +219,57 @@ export const caseStudy_list = [
       ],
     },
   },
-  {
-    brand: "planet",
-    hero: {
-      title: "ELEVATE YOUR FITNESS GAME - PLANET FITNESS",
-      description:
-        "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly.",
-      industry_type: "Health & Fitness",
-      img: PLANETPRIMARY,
-    },
-    homeBanner: {
-      image: HOME_BANNER,
-    },
-    backStory: {
-      id: 1,
-      title: "Backstory",
-      img: PLANET1,
-      description: [
-        "Creating Planet Fitness presented formidable hurdles, including integrating advanced biometric tracking, ensuring data privacy, personalizing workout plans, fostering user engagement, and constantly iterating based on user feedback.",
-        "Yet, the team's unwavering dedication and shared commitment led to the successful launch of an app that revolutionized fitness and wellness.",
-      ],
-    },
-    challange: {
-      id: 2,
-      title: "Challange",
-      img: PLANET2,
-      description: [
-        "The user lacks real-time monitoring of their physical activity and health metrics, making it challenging to track progress and set achievable goals.",
-        "Additionally, without access to personalized workout plans and community support, the user might struggle to stay motivated and maintain a consistent fitness regimen.",
-      ],
-    },
-    solution: {
-      id: 3,
-      title: "Solution",
-      img: PLANET3,
-      description: [
-        "Planet Fitness app addressed real-time monitoring limitations with advanced fitness tracking, wearable device integration. Users accessed accurate metrics, tracked progress, set goals, and made data-driven decisions.",
-        "Seamless compatibility enhanced user experience, fostering motivation and commitment to health goals.",
-      ],
-    },
-    result: {
-      id: 4,
-      title: "Result",
-      img: PLANET4,
-      description: [
-        "13% decrease in resting heart rate",
-        "22% improvement in sleep quality",
-        "62% of app users reported achieving their fitness goals",
-        "Users engaged in challenges and social interactions within the app, leading to a 40% increase in user retention over the past year.",
-      ],
-    },
-  },
+  // {
+  //   brand: "planet",
+  //   hero: {
+  //     title: "ELEVATE YOUR FITNESS GAME - PLANET FITNESS",
+  //     description:
+  //       "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly.",
+  //     industry_type: "Health & Fitness",
+  //     img: PLANETPRIMARY,
+  //   },
+  //   homeBanner: {
+  //     image: HOME_BANNER,
+  //   },
+  //   backStory: {
+  //     id: 1,
+  //     title: "Backstory",
+  //     img: PLANET1,
+  //     description: [
+  //       "Creating Planet Fitness presented formidable hurdles, including integrating advanced biometric tracking, ensuring data privacy, personalizing workout plans, fostering user engagement, and constantly iterating based on user feedback.",
+  //       "Yet, the team's unwavering dedication and shared commitment led to the successful launch of an app that revolutionized fitness and wellness.",
+  //     ],
+  //   },
+  //   challange: {
+  //     id: 2,
+  //     title: "Challange",
+  //     img: PLANET2,
+  //     description: [
+  //       "The user lacks real-time monitoring of their physical activity and health metrics, making it challenging to track progress and set achievable goals.",
+  //       "Additionally, without access to personalized workout plans and community support, the user might struggle to stay motivated and maintain a consistent fitness regimen.",
+  //     ],
+  //   },
+  //   solution: {
+  //     id: 3,
+  //     title: "Solution",
+  //     img: PLANET3,
+  //     description: [
+  //       "Planet Fitness app addressed real-time monitoring limitations with advanced fitness tracking, wearable device integration. Users accessed accurate metrics, tracked progress, set goals, and made data-driven decisions.",
+  //       "Seamless compatibility enhanced user experience, fostering motivation and commitment to health goals.",
+  //     ],
+  //   },
+  //   result: {
+  //     id: 4,
+  //     title: "Result",
+  //     img: PLANET4,
+  //     description: [
+  //       "13% decrease in resting heart rate",
+  //       "22% improvement in sleep quality",
+  //       "62% of app users reported achieving their fitness goals",
+  //       "Users engaged in challenges and social interactions within the app, leading to a 40% increase in user retention over the past year.",
+  //     ],
+  //   },
+  // },
   {
     brand: "bossalabs",
     hero: {
@@ -427,20 +427,10 @@ export const technology_1 = [
   "React JS",
   "Node JS",
   "JavaScript",
-  "React Native",
   "DJango",
   "JavaScript",
+  "Next JS",
   "React JS",
-];
-
-export const technology_2 = [
+  "TypeScript",
   "Vue JS",
-  "Next JS",
-  "Android",
-  "iOS",
-  "TypeScript",
-  "Flask",
-  "Next JS",
-  "TypeScript",
-  "Android",
 ];

@@ -63,11 +63,10 @@ export default function Header() {
                   Contact Me
                 </a>
               </li>
-              <li className="nav-item">
-                <a href={"#contact-us"} className="nav-link">
-                  <button className="primary-btn fw-bold">hire me</button>
-                </a>
-              </li>
+
+              <a href={"#contact-us"} className="nav-link">
+                <button className="primary-btn fw-bold">hire me</button>
+              </a>
             </ul>
           </div>
         </div>

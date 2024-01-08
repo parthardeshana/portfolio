@@ -12,7 +12,7 @@ export default function Footer() {
                 <a
                   target="_blank"
                   aria-label="linkedin-logo"
-                  href="https://www.linkedin.com/in/parth-ardeshana-ap/"
+                  href="https://www.linkedin.com/in/parth-frontend"
                 >
                   <i className="bi bi-linkedin" aria-hidden="true" />
                 </a>

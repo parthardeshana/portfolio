@@ -82,21 +82,21 @@ header.header-fixed {
     transform: translateY(0);
   }
 }
-
+/* 
 header.header-fixed nav.navbar {
   padding: 0;
 }
 
 header.header-fixed nav.navbar ul.navbar-nav li.nav-item {
   padding: 20px 0;
-}
+} */
 
 header .main-nav ul.navbar-nav {
   justify-content: space-around;
 }
 
 header ul.navbar-nav li.nav-item {
-  padding: 34px 0 32px;
+  /* padding: 34px 0 32px; */
   margin-right: 20px;
 }
 
@@ -129,25 +129,6 @@ header ul.navbar-nav li.nav-item a.nav-link:hover:before {
   width: 100%;
 }
 
-.navbar-nav .dropdown-menu {
-  position: absolute;
-  border-radius: 0 0 30px 30px;
-  min-width: 200px;
-  padding: 20px 30px;
-  box-shadow: 0 4px 0 #eaeaea;
-}
-
-.navbar-nav .dropdown-menu li a {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.722222;
-  padding: 4px 0;
-}
-
-.navbar-nav .dropdown-menu li a:hover {
-  background: transparent;
-}
-
 /* new menu startsss */
 
 header .main-nav ul.navbar-nav {
@@ -155,7 +136,7 @@ header .main-nav ul.navbar-nav {
 }
 
 header ul.navbar-nav li.nav-item {
-  padding: 20px 0 32px;
+  /* padding: 20px 0 32px; */
   margin-right: 20px;
 }
 
@@ -180,26 +161,6 @@ header ul.navbar-nav li.nav-item a.nav-link:before {
 }
 
 header ul.navbar-nav li.nav-item a.nav-link:hover:before {
-  width: 100%;
-}
-
-.navbar-nav .dropdown-menu {
-  position: absolute;
-  border-radius: 0 0 30px 30px;
-  min-width: 200px;
-  padding: 45px 0px;
-  box-shadow: 0 4px 0 #eaeaea;
-}
-
-.navbar-nav .dropdown-menu.megamenu {
-  box-shadow: none;
-  border: 0;
-  background: white;
-  /* min-height: 100vh; */
-  border-radius: 0;
-  border-top: 1px solid gray;
-  border-radius: 0 0 60px 60px;
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
   width: 100%;
 }
 
@@ -2053,7 +2014,6 @@ section#service-rth {
 .text-work-portfolio {
   height: 4px;
   width: 20%;
-
   background-color: #ff6c23;
   margin: 15px auto;
 }
@@ -3855,6 +3815,7 @@ h2.title-industry-expe {
     background-size: cover;
     background-image: none !important;
     background-color: #282a37 !important;
+    height: 400px;
   }
 
   .technologies-guiding-greennet-box {
@@ -4233,6 +4194,7 @@ h2.title-industry-expe {
     background-size: cover;
     background-image: none !important;
     background-color: #282a37 !important;
+    height: 500px;
   }
 
   .technologies-guiding-greennet-box {
@@ -4350,6 +4312,9 @@ h2.title-industry-expe {
 }
 
 @media (max-width: 767px) {
+  header {
+    padding: 22px !important;
+  }
   .project-section-1 {
     display: none !important;
   }
@@ -4357,6 +4322,7 @@ h2.title-industry-expe {
     background-size: cover;
     background-image: none !important;
     background-color: #282a37 !important;
+    height: 500px;
   }
   .technologies-guiding-greennet-box {
     background-size: cover;
@@ -4387,7 +4353,7 @@ h2.title-industry-expe {
   }
 
   header.header-fixed nav.navbar ul.navbar-nav li.nav-item {
-    padding: 0;
+    padding: 30px;
   }
   ul.navbar-nav {
     margin-top: 15px;

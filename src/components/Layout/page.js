@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 //relativwe path import
-import Header from "../Header/page";
 import Footer from "../Footer/page";
 import ScrollToTop from "../ScrollToTop/page";
 

@@ -19,21 +19,19 @@ export default function Home() {
   return (
     <div>
       <Header />
-      {/* <div style={{ marginTop: 50 }}>
-        <CaseStudyHome title="Parth P." description="I'm frontend developer" />
-      </div> */}
+
       <div>
         <Main description="I'm frontend developer" />
       </div>
 
-      <section id="service-exp" style={{ marginTop: 100 }}>
+      <section id="service-exp">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-12">
               <div className="service-exp-head">
                 <h2>Technology Expertise</h2>
                 <p>
-                  {`I'm a React.js and JavaScript expert with 6+ years of
+                  {`I'm a React.js and JavaScript expert with 7+ years of
                   experience in frontend development.where innovation meets
                   elegance in every line of code`}
                 </p>
@@ -47,6 +45,7 @@ export default function Home() {
                     <ul>
                       <li>React</li>
                       <li>Next JS</li>
+                      <li>Vue JS</li>
                     </ul>
                   </div>
                 </div>
@@ -55,18 +54,19 @@ export default function Home() {
                   <div className="service-exp-item">
                     <h3>Database</h3>
                     <ul>
+                      <li>Node JS</li>
                       <li>Mongo DB</li>
                       <li>My Sql</li>
-
                       <li>firebase</li>
                     </ul>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                   <div className="service-exp-item">
-                    <h3>Back end</h3>
+                    <h3>Languages</h3>
                     <ul>
-                      <li>Node.js</li>
+                      <li>JavaScript</li>
+                      <li>TypeScript</li>
                     </ul>
                   </div>
                 </div>

@@ -32,12 +32,6 @@ export default function ScrollToTop() {
       >
         <i className="bi bi-arrow-up-short"></i>
       </div>
-
-      {/* <div className="quote_menu">
-        <Link href="/contact">
-          <span>Request a Quote</span>
-        </Link>
-      </div> */}
       <div className="social_sticky_btns">
         <a
           href="https://wa.me/919537630281"

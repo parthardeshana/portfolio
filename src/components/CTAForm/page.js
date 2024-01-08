@@ -1,7 +1,5 @@
 "use client";
 import { useForm } from "react-hook-form";
-//constant data import
-import List from "@/assets/JsonData/CountryList.json";
 //api import
 import axios from "axios";
 
@@ -94,7 +92,7 @@ export default function CTAForm({ title1, title2, subtitle }) {
             </div>
           </div>
           <div className="col-lg-12 col-12 text-center">
-            <button type="submit" className="btn submit-btn">
+            <button type="submit" className="primary-btn">
               Submit
             </button>
           </div>
