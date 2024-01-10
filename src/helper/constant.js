@@ -55,7 +55,7 @@ export const case_study_data = [
       alt: "enter",
       tag: "Entertainment",
       title: "A Smart Cutting board with live classes firmware",
-      tech_tag: ["React", "Python", "Django"],
+      tech_tag: ["React", "Python", "Django", "Metrial UI"],
       pathname: "bossalabs",
       description:
         "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly.",
