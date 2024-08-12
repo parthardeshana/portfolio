@@ -8,14 +8,37 @@ import { case_study_data } from "@/helper/constant";
 import CTAForm from "@/components/CTAForm/page";
 import Main from "@/components/Main/page";
 import Technology from "@/components/Technology/page";
+import { CircularProgress } from "@mui/material";
+import CaseStudyView from "@/components/CaseStudy/View";
+import { useEffect, useState } from "react";
+import { getAllCaseStudies } from "@/api";
 
 export default function Home() {
   const router = useRouter();
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleBlog = (pathname) => {
     router.push(`/case-studies/${pathname}`);
   };
+  useEffect(() => {
+    fetchAllCaseStudies();
+  }, []);
 
+  const fetchAllCaseStudies = () => {
+    getAllCaseStudies()
+      .then((res) => {
+        if (res) {
+          setData(res?.data?.data);
+          setIsLoading(false);
+        }
+      })
+      .catch((e) => {
+        setIsLoading(false);
+        setData([]);
+        console.log(e);
+      });
+  };
   return (
     <div>
       <Header />
@@ -91,7 +114,7 @@ export default function Home() {
       <section id="case-study-section">
         <h2 className="text-center mt-5 text-uppercase fs-1">Portfolio</h2>
         <div className="text-work-portfolio" />
-        <div className="container mt-5">
+        {/* <div className="container mt-5">
           <div className="row">
             {case_study_data.map((item, index) => {
               return (
@@ -125,7 +148,27 @@ export default function Home() {
               );
             })}
           </div>
-        </div>
+        </div> */}
+        <section id="case-study-section">
+          <div className="container">
+            {isLoading && !data.length ? (
+              <CircularProgress
+                sx={{ display: "flex", margin: "0 auto", color: "#f36d45" }}
+              />
+            ) : (
+              <div className="row">
+                {!isLoading && data?.length > 0 ? (
+                  <CaseStudyView data={data} isStatic={"dynamic-data"} />
+                ) : (
+                  <CaseStudyView
+                    data={case_study_data}
+                    isStatic={"static-data"}
+                  />
+                )}
+              </div>
+            )}
+          </div>
+        </section>
       </section>
 
       <section className="my-5">
