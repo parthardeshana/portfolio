@@ -13,15 +13,6 @@ import { getSingleCaseStudy } from "@/api";
 
 export default function CaseStudyDetails({ params }) {
   const [caseData, setCaseData] = useState(null);
-  // console.log("params:::", params);
-  // const data =
-  //   caseData.length &&
-  //   caseData?.filter((e) => e.brand === params.studiesdetails);
-  // const banner =
-  //   caseData.length &&
-  //   caseData?.filter((e) => e.details.pathname === params.studiesdetails);
-  // console.log("17<><>", data);
-
   const decodedPathname = params?.studiesdetails?.replace(/-/g, " ");
 
   useEffect(() => {
@@ -48,25 +39,12 @@ export default function CaseStudyDetails({ params }) {
         <>
           <CaseStudyHeader />
           <section className="case-study-home-banner">
-            {/* <CaseStudyHome
-              img={banner[0].details.img.src}
-              title={banner[0].details.title}
-              techStack={banner[0].details.tech_tag}
-              // description="Reduce development costs to increase profits without compromise. With a huge pool of talented and experienced technology experts."
-            /> */}
             <CaseStudyHome
-              img={caseData?.introduction?.image}
+              img={caseData?.coverImage}
               title={caseData?.introduction?.title}
               techStack={caseData?.techStack}
             />
           </section>
-          {/* <HeroSection
-            title={data[0].hero.title}
-            description={data[0].hero.description}
-            PrimaryImage={data[0].hero.img}
-            stacks={[]}
-            indrustyName={data[0].hero.industry_type}
-          /> */}
 
           <HeroSection
             title={caseData?.introduction?.title}
@@ -75,40 +53,26 @@ export default function CaseStudyDetails({ params }) {
             indrustyName={caseData?.introduction?.industry}
           />
 
-          {/* backstory  */}
-          {/* <Alpha
-            id={data[0].backStory?.id}
-            name={data[0].backStory?.title}
-            image={data[0].backStory?.img}
-            description={data[0].backStory?.description}
-          /> */}
           <Alpha
             name={caseData?.backstory.title}
             image={caseData?.backstory?.image}
             description={caseData?.backstory?.descriptions}
           />
-          {/* challange */}
-          {/* <Beta
-            id={data[0].challange?.id}
-            name={data[0].challange?.title}
-            image={data[0].challange?.img}
-            description={data[0].challange?.description}
-          /> */}
-          {/* <HomeBanner /> */}
-          {/* solution */}
-          {/* <Alpha
-            id={data[0].solution?.id}
-            name={data[0].solution?.title}
-            image={data[0].solution?.img}
-            description={data[0].solution?.description}
-          /> */}
-          {/* result */}
-          {/* <Beta
-            id={data[0].result?.id}
-            name={data[0].result?.title}
-            image={data[0].result?.img}
-            description={data[0].result?.description}
-          /> */}
+
+          <Beta
+            image={caseData?.challenge?.image}
+            description={caseData?.challenge.descriptions}
+          />
+
+          <Alpha
+            image={caseData?.solution?.image}
+            description={caseData?.solution?.descriptions}
+          />
+
+          <Beta
+            image={caseData?.result?.image}
+            description={caseData?.result?.descriptions}
+          />
         </>
       )}
     </>

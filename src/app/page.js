@@ -1,8 +1,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-
 import Header from "@/components/Header/page";
 import { case_study_data } from "@/helper/constant";
 import CTAForm from "@/components/CTAForm/page";
@@ -44,7 +42,7 @@ export default function Home() {
       <Header />
 
       <div>
-        <Main description="I'm frontend developer" />
+        <Main description="I'm Full-stack developer" />
       </div>
 
       <section id="service-exp">
@@ -54,9 +52,9 @@ export default function Home() {
               <div className="service-exp-head">
                 <h2>Technology Expertise</h2>
                 <p>
-                  {`I'm a React.js and JavaScript expert with 7+ years of
-                  experience in frontend development.where innovation meets
-                  elegance in every line of code`}
+                  {`I'm a JavaScript Full-stack expert with 7+ years of
+                  experience in Frontend & Backend development.where innovation meets
+                  elegance in every line of code.`}
                 </p>
               </div>
             </div>
@@ -112,8 +110,8 @@ export default function Home() {
       </section>
 
       <section id="case-study-section">
-        <h2 className="text-center mt-5 text-uppercase fs-1">Portfolio</h2>
-        <div className="text-work-portfolio" />
+        <h2 className="text-center mt-5 text-uppercase fs-1 ">Portfolio</h2>
+        <div className="text-work-portfolio mb-5" />
         {/* <div className="container mt-5">
           <div className="row">
             {case_study_data.map((item, index) => {

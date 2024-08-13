@@ -28,17 +28,21 @@ const HeroSection = ({
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
               <div className="service-banner-right">
                 <Box height={"100%"} width={"100%"}>
-                  <Image alt="" src={PrimaryImage} width={300} height={300}/>
+                  <Image
+                    alt=""
+                    src={PrimaryImage}
+                    width={300}
+                    height={300}
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "auto",
+                      maxWidth: "100vw",
+                      maxHeight: "auto",
+                    }}
+                  />
                 </Box>
-                {/* {stacks.length > 0 && (
-                  <ul className="text-logos-style">
-                    {stacks?.map((tech, index) => (
-                      <li key={index}>
-                        <img className="img-fluid" alt="" src={tech} />
-                      </li>
-                    ))}
-                  </ul>
-                )} */}
+          
               </div>
             </div>
           </div>

@@ -36,7 +36,22 @@ const Beta = ({ id, name, description, image }) => {
               </ul>
             </div>
             <div className="col-lg-6 col-sm-6 col-xs-12 col-12">
-              <Image alt="" priority="true" className="img-fluid" src={image} />
+              <Image
+                alt=""
+                priority="true"
+                className="img-fluid"
+                src={image}
+                width={300}
+                height={300}
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "auto",
+                  maxWidth: "100vw",
+                  maxHeight: "auto",
+                }}
+             
+              />
             </div>
           </div>
         </div>

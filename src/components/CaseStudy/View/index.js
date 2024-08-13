@@ -1,4 +1,5 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+// import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -30,13 +31,16 @@ const CaseStudyView = ({ data, isStatic }) => {
           >
             <div className="case-study-bx">
               <div className="case-study-img">
-                <Image
-                  priority={true}
+                <img
                   className="img-fluid"
-                  src={item?.introduction?.image}
+                  src={item?.coverImage}
                   alt=""
-                  width={500}
-                  height={500}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "300px",
+                    maxWidth: "100vw",
+                  }}
                 />
                 <span>{item?.category}</span>
               </div>
