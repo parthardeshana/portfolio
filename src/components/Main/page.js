@@ -7,7 +7,7 @@ export default function Main() {
             Parth <span style={{ color: "#f36d45" }}>A.</span>
             <br />
             <span style={{ color: "#f36d45" }} className="fs-1">
-              React<span style={{ color: "#000" }}> Developer</span>
+              FullStack<span style={{ color: "#000" }}> Developer</span>
             </span>
           </p>
           <div className="mt-3">

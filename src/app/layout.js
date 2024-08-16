@@ -18,7 +18,7 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  title: "Front End Developer - Parth ",
+  title: "Full Stack Developer - Parth ",
   description: "web development company",
 };
 
