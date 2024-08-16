@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import Image from "next/image";
 const HeroSection = ({
   PrimaryImage,
@@ -26,21 +27,22 @@ const HeroSection = ({
 
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
               <div className="service-banner-right">
-                <Image
-                  alt=""
-                  priority="true"
-                  src={PrimaryImage}
-                  style={{ width: "100%", height: "100%" }}
-                />
-                {/* {stacks.length > 0 && (
-                  <ul className="text-logos-style">
-                    {stacks?.map((tech, index) => (
-                      <li key={index}>
-                        <img className="img-fluid" alt="" src={tech} />
-                      </li>
-                    ))}
-                  </ul>
-                )} */}
+                <Box height={"100%"} width={"100%"}>
+                  <Image
+                    alt=""
+                    src={PrimaryImage}
+                    width={300}
+                    height={300}
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "auto",
+                      maxWidth: "100vw",
+                      maxHeight: "auto",
+                    }}
+                  />
+                </Box>
+          
               </div>
             </div>
           </div>
