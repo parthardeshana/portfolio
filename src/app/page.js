@@ -1,48 +1,25 @@
 "use client";
-
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import Header from "@/components/Header/page";
 import { case_study_data } from "@/helper/constant";
 import CTAForm from "@/components/CTAForm/page";
 import Main from "@/components/Main/page";
 import Technology from "@/components/Technology/page";
-import { CircularProgress } from "@mui/material";
-import CaseStudyView from "@/components/CaseStudy/View";
-import { useEffect, useState } from "react";
-import { getAllCaseStudies } from "@/api";
 
 export default function Home() {
   const router = useRouter();
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
   const handleBlog = (pathname) => {
     router.push(`/case-studies/${pathname}`);
   };
-  useEffect(() => {
-    fetchAllCaseStudies();
-  }, []);
 
-  const fetchAllCaseStudies = () => {
-    getAllCaseStudies()
-      .then((res) => {
-        if (res) {
-          setData(res?.data?.data);
-          setIsLoading(false);
-        }
-      })
-      .catch((e) => {
-        setIsLoading(false);
-        setData([]);
-        console.log(e);
-      });
-  };
   return (
     <div>
       <Header />
 
       <div>
-        <Main description="I'm Full-stack developer" />
+        <Main description="I'm frontend developer" />
       </div>
 
       <section id="service-exp">
@@ -52,9 +29,9 @@ export default function Home() {
               <div className="service-exp-head">
                 <h2>Technology Expertise</h2>
                 <p>
-                  {`I'm a JavaScript Full-stack expert with 7+ years of
-                  experience in Frontend & Backend development.where innovation meets
-                  elegance in every line of code.`}
+                  {`I'm a React.js and JavaScript expert with 7+ years of
+                  experience in frontend development.where innovation meets
+                  elegance in every line of code`}
                 </p>
               </div>
             </div>
@@ -110,9 +87,9 @@ export default function Home() {
       </section>
 
       <section id="case-study-section">
-        <h2 className="text-center mt-5 text-uppercase fs-1 ">Portfolio</h2>
-        <div className="text-work-portfolio mb-5" />
-        {/* <div className="container mt-5">
+        <h2 className="text-center mt-5 text-uppercase fs-1">Portfolio</h2>
+        <div className="text-work-portfolio" />
+        <div className="container mt-5">
           <div className="row">
             {case_study_data.map((item, index) => {
               return (
@@ -128,6 +105,12 @@ export default function Home() {
                         className="img-fluid"
                         src={item.details.img}
                         alt=""
+                        style={{  
+                          objectFit: "cover",
+                          width: "100%",
+                          height: "300px",
+                          maxWidth: "100vw",
+                        }}
                       />
                       <span>{item.details.tag}</span>
                     </div>
@@ -146,27 +129,7 @@ export default function Home() {
               );
             })}
           </div>
-        </div> */}
-        <section id="case-study-section">
-          <div className="container">
-            {isLoading && !data.length ? (
-              <CircularProgress
-                sx={{ display: "flex", margin: "0 auto", color: "#f36d45" }}
-              />
-            ) : (
-              <div className="row">
-                {!isLoading && data?.length > 0 ? (
-                  <CaseStudyView data={data} isStatic={"dynamic-data"} />
-                ) : (
-                  <CaseStudyView
-                    data={case_study_data}
-                    isStatic={"static-data"}
-                  />
-                )}
-              </div>
-            )}
-          </div>
-        </section>
+        </div>
       </section>
 
       <section className="my-5">
