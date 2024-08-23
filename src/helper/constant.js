@@ -10,11 +10,6 @@ import N2 from "@/assets/images/Portfolio/Nextgen/n2.png";
 import N3 from "@/assets/images/Portfolio/Nextgen/n3.png";
 import N4 from "@/assets/images/Portfolio/Nextgen/n4.png";
 import N5 from "@/assets/images/Portfolio/Nextgen/n5.png";
-// import PLANETPRIMARY from "@/assets/images/Portfolio/Planet/P_Home.png";
-// import PLANET1 from "@/assets/images/Portfolio/Planet/P1.png";
-// import PLANET2 from "@/assets/images/Portfolio/Planet/P2.png";
-// import PLANET3 from "@/assets/images/Portfolio/Planet/P3.png";
-// import PLANET4 from "@/assets/images/Portfolio/Planet/P4.png";
 import GROUP3 from "@/assets/images/Portfolio/Bossalabs/Group3.png";
 import GROUP4 from "@/assets/images/Portfolio/Bossalabs/Group4.png";
 import GROUP5 from "@/assets/images/Portfolio/Bossalabs/Group5.png";
@@ -24,30 +19,19 @@ import CHURCH2 from "@/assets/images/Portfolio/church2.png";
 import CHURCH3 from "@/assets/images/Portfolio/church3.png";
 import CHURCH4 from "@/assets/images/Portfolio/church4.png";
 import CHURCH5 from "@/assets/images/Portfolio/church5.png";
-// import CHURCH6 from "@/assets/images/Portfolio/church6.png";
-// import HOME_BANNER from "@/assets/images/banner-3-scaled.png";
 import PHYSIO1 from "@/assets/images/Portfolio/physio-cafe/P1.png";
 import PHYSIO2 from "@/assets/images/Portfolio/physio-cafe/P2.png";
 import PHYSIO3 from "@/assets/images/Portfolio/physio-cafe/P3.png";
 import PHYSIO4 from "@/assets/images/Portfolio/physio-cafe/P4.png";
 import PHYSIO5 from "@/assets/images/Portfolio/physio-cafe/P5.png";
 
-export const case_study_data = [
-  // {
-  //   name: "Fitness",
-  //   details: {
-  //     img: PLANET_CARD_HERO,
-  //     alt: "planet card hero",
-  //     tag: "Fitness",
-  //     title: "Elevent your fitness game-planet fitness",
-  //     tech_tag: ["Node", "React Native"],
-  //     pathname: "planet",
-  //     description:
-  //       "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly",
-  //   },
-  //   isSelected: true,
-  // },
+import bepop from "@/assets/images/Portfolio/Bepop/bepop.png";
+import bepop2 from "@/assets/images/Portfolio/Bepop/bepop2.png";
+import bepop3 from "@/assets/images/Portfolio/Bepop/bepop3.png";
+import bepop4 from "@/assets/images/Portfolio/Bepop/bepop4.png";
+import bepop5 from "@/assets/images/Portfolio/Bepop/bepop5.png";
 
+export const case_study_data = [
   {
     name: "Entertainment",
     details: {
@@ -116,6 +100,20 @@ export const case_study_data = [
       pathname: "physiocafe",
       description:
         "In response to the challenges within the healthcare system, PhysioCafe emerged with a mission to streamline doctor appointments and enhance doctor-patient relationships. Focused on optimizing appointment scheduling, ensuring data security, and creating user-friendly interfaces, PhysioCafe's dedicated team successfully delivered a groundbreaking web app.",
+    },
+    isSelected: false,
+  },
+  {
+    name: "Entertainment",
+    details: {
+      img: bepop,
+      alt: "enter",
+      tag: "Entertainment",
+      title: "Connecting Creatives with Work",
+      tech_tag: ["JAvascript", "next.js", "aws", "Mongodb"],
+      pathname: "bepop",
+      description:
+        "Bepop is a website that connects freelance creative professionals with employers. It allows employers to browse profiles and post opportunities, while creatives can create profiles and apply for jobs. In short, it's a platform for creative freelancers to find work. Bepop’s main goal was to create a community engagement platform that recognized creative people's preferences and paired the appropriate creatives with the job. Easy-to-use features were also included so that job posters could effortlessly find the right person.",
     },
     isSelected: false,
   },
@@ -219,57 +217,6 @@ export const caseStudy_list = [
       ],
     },
   },
-  // {
-  //   brand: "planet",
-  //   hero: {
-  //     title: "ELEVATE YOUR FITNESS GAME - PLANET FITNESS",
-  //     description:
-  //       "Planet Fitness is the perfect fitness ally for your wellness journey. Track your heart rate, sleep patterns, and stress levels with ease. Get personalized workout plans tailored to your goals and preferences. Monitor your nutrition and calorie intake effortlessly.",
-  //     industry_type: "Health & Fitness",
-  //     img: PLANETPRIMARY,
-  //   },
-  //   homeBanner: {
-  //     image: HOME_BANNER,
-  //   },
-  //   backStory: {
-  //     id: 1,
-  //     title: "Backstory",
-  //     img: PLANET1,
-  //     description: [
-  //       "Creating Planet Fitness presented formidable hurdles, including integrating advanced biometric tracking, ensuring data privacy, personalizing workout plans, fostering user engagement, and constantly iterating based on user feedback.",
-  //       "Yet, the team's unwavering dedication and shared commitment led to the successful launch of an app that revolutionized fitness and wellness.",
-  //     ],
-  //   },
-  //   challange: {
-  //     id: 2,
-  //     title: "Challange",
-  //     img: PLANET2,
-  //     description: [
-  //       "The user lacks real-time monitoring of their physical activity and health metrics, making it challenging to track progress and set achievable goals.",
-  //       "Additionally, without access to personalized workout plans and community support, the user might struggle to stay motivated and maintain a consistent fitness regimen.",
-  //     ],
-  //   },
-  //   solution: {
-  //     id: 3,
-  //     title: "Solution",
-  //     img: PLANET3,
-  //     description: [
-  //       "Planet Fitness app addressed real-time monitoring limitations with advanced fitness tracking, wearable device integration. Users accessed accurate metrics, tracked progress, set goals, and made data-driven decisions.",
-  //       "Seamless compatibility enhanced user experience, fostering motivation and commitment to health goals.",
-  //     ],
-  //   },
-  //   result: {
-  //     id: 4,
-  //     title: "Result",
-  //     img: PLANET4,
-  //     description: [
-  //       "13% decrease in resting heart rate",
-  //       "22% improvement in sleep quality",
-  //       "62% of app users reported achieving their fitness goals",
-  //       "Users engaged in challenges and social interactions within the app, leading to a 40% increase in user retention over the past year.",
-  //     ],
-  //   },
-  // },
   {
     brand: "bossalabs",
     hero: {
@@ -417,6 +364,56 @@ export const caseStudy_list = [
         "Boosted interaction by 31% with Text In Church's reviews and ratings.",
         "Reduced manual efforts by 27% through seamless integrations.",
         "Improved platform performance by 33% with analytics and reporting tools.",
+      ],
+    },
+  },
+  {
+    brand: "bepop",
+    hero: {
+      title:
+        "How Bepop Tapped Into The Job Market With Technithunder: Connecting Creatives with Work",
+      description:
+        "Bepop is a website that connects freelance creative professionals with employers. It allows employers to browse profiles and post opportunities, while creatives can create profiles and apply for jobs. In short, it's a platform for creative freelancers to find work.",
+      industry_type: "Entertainment",
+      img: bepop2,
+    },
+    backStory: {
+      id: 1,
+      title: "Backstory",
+      img: bepop3,
+      description: [
+        "A community building enthusiast was hit by frustration again. Another rejection email. All that design work, wasted? Friends in tech got jobs easy with websites like LinkedIn. Why not something for creative people?",
+        "A place where people who hire see your unique style, not just words on a page. A place to show off your work the way you want.",
+        "This wasn't just one person's problem. Designers, photographers, everyone creative - they all felt it. No good platform, just a big empty space.",
+      ],
+    },
+    challange: {
+      id: 2,
+      title: "Challange",
+      img: bepop4,
+      description: [
+        "Found it difficult to hire creators: They wanted to attract lots of creative folks to Bepop, but they initially relied on a no-code platform to build it. This was like trying to build a cool website with only building blocks - it wasn't powerful enough to handle the growth they envisioned.",
+        "Wanted Easy to Navigate Features: Bepop needed to be clear and simple for both creative minds and those looking to hire them. Imagine a user-friendly website, not a confusing maze!",
+        "Wanted Real People, Real Profiles: Bepop wanted to make sure everyone on the platform was genuine, not fakes. No one wants to search through a bunch of made-up profiles!",
+      ],
+    },
+    solution: {
+      id: 3,
+      title: "Solution",
+      img: bepop5,
+      description: [
+        "To address the growing customer base and changing market trends, D-Kare adopted digital transformation, creating a user-friendly e-commerce platform.",
+        "Agile methodologies and collaboration ensured successful development, aligning with their mission of promoting balance and wellness through natural products. The platform integrated with existing systems, prioritized data security, and embraced customer feedback for continuous improvement.",
+      ],
+    },
+    result: {
+      id: 4,
+      title: "Result",
+      img: bepop2,
+      description: [
+        "Talent Acquisition: We incorporated casting call functionality, streamlining the process for employers to identify and connect with suitable creative talent.",
+        "Enhanced Communication: We integrated messaging and communication platforms to facilitate seamless collaboration and information exchange between creatives and potential employers.",
+        "Bepop facilitates the creation of filtered jobs between creative individuals who share similar interests. Individuals are categorized according to their interests and preferences. The platform is simple to use, fostering proactive discussions and providing creative participants with experiences.",
       ],
     },
   },
