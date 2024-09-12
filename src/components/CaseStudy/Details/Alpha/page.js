@@ -12,7 +12,6 @@ const Alpha = ({ id, name, description, image }) => {
                   {name}
                 </h2>
               </div>
-              
             </div>
             <div className="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-12"></div>
           </div>
@@ -27,8 +26,6 @@ const Alpha = ({ id, name, description, image }) => {
                 priority="true"
                 className="img-fluid"
                 src={image}
-                width={300}
-                height={300}
                 style={{
                   objectFit: "cover",
                   width: "100%",
@@ -38,7 +35,7 @@ const Alpha = ({ id, name, description, image }) => {
                 }}
               />
             </div>
-            <div className="col-lg-6 col-sm-6 col-xs-12 col-12">
+            <div className="col-lg-6 col-sm-6 col-xs-12 col-12 ">
               <ul className="circle-list-style">
                 {description?.map((des, index) => (
                   <div style={{ display: "flex" }} key={index}>
