@@ -1352,6 +1352,16 @@ section#case-study-section h3 {
   margin-bottom: 30px;
 }
 
+.two-line-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3.2em;
+  line-height: 1.6em;
+}
+
 /************ case studies box end  *********/
 
 /************ case studies section one *********/

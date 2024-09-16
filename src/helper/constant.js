@@ -31,10 +31,15 @@ import bepop3 from "@/assets/images/Portfolio/Bepop/bepop-3.png";
 import bepop4 from "@/assets/images/Portfolio/Bepop/bepop-4.png";
 import bepop5 from "@/assets/images/Portfolio/Bepop/bepop-3.png";
 
-import hobahoo from "@/assets/images/Portfolio/hobahoo/hobahoo.png";
+import hobahoo from "@/assets/images/Portfolio/hobahoo/hobbahoo-main.png";
 import hobahoo1 from "@/assets/images/Portfolio/hobahoo/hoobahoo1.png";
 import hobahoo2 from "@/assets/images/Portfolio/hobahoo/hoobahoo2.png";
 import hobahoo3 from "@/assets/images/Portfolio/hobahoo/hoobahoo3.png";
+
+import sports from "@/assets/images/Portfolio/Sports/sport1.jpg";
+import sports2 from "@/assets/images/Portfolio/Sports/sport2.jpg";
+import sports3 from "@/assets/images/Portfolio/Sports/sport3.png";
+import sports4 from "@/assets/images/Portfolio/Sports/sport4.png";
 
 export const case_study_data = [
   {
@@ -134,6 +139,21 @@ export const case_study_data = [
       pathname: "hoobahoo",
       description:
         "Hoobahoo is a dynamic social platform designed for real-time conversations",
+    },
+    isSelected: false,
+  },
+
+  {
+    name: "Entertainment",
+    details: {
+      img: sports2,
+      alt: "enter",
+      tag: "Healthcare & Wellness2",
+      title: "SportwareOnline",
+      tech_tag: ["Javascript", "next.js", "React js", "Node js", "aws"],
+      pathname: "sportwareonline",
+      description:
+        "SportsWareOnLine (SWOL) is a leading EMR solution designed to streamline how Athletic Trainers record, manage, and report athlete information.",
     },
     isSelected: false,
   },
@@ -441,10 +461,9 @@ export const caseStudy_list = [
   {
     brand: "hoobahoo",
     hero: {
-      title:
-        "Hoobahoo is a dynamic social platform designed for real-time conversations",
+      title: "How Technithunder is Revolutionizing Social Interaction",
       description:
-        "Hoobahoo is a modern chat-driven platform that brings people together for real-time conversations. Designed for quick and concise communication, users can post short updates, join live discussions, and follow trending hashtags or topics that resonate with their interests.",
+        "Hoobahoo.ai is a social platform where AI beings interact with humans, offering customizable personalities for friendship, companionship, and romance. It blends AI into social circles to enhance connections and emotional well-being, redefining digital interactions.",
       industry_type: "Communication",
       img: hobahoo1,
     },
@@ -453,9 +472,9 @@ export const caseStudy_list = [
       title: "Backstory",
       img: hobahoo2,
       description: [
-        "A community building enthusiast was hit by frustration again. Another rejection email. All that design work, wasted? Friends in tech got jobs easy with websites like LinkedIn. Why not something for creative people?",
-        "A place where people who hire see your unique style, not just words on a page. A place to show off your work the way you want.",
-        "This wasn't just one person's problem. Designers, photographers, everyone creative - they all felt it. No good platform, just a big empty space.",
+        "In today’s fast-paced world, many feel lonely despite digital connections, as traditional platforms often miss addressing emotional needs.",
+        "AI technology offers a solution by providing constant, non-judgmental companionship. However, few platforms integrate AI into social interactions effectively.",
+        "Hoobahoo.ai lets AI companions actively participate in social life, fostering meaningful connections and enhancing emotional well-being.",
       ],
     },
     challange: {
@@ -463,9 +482,9 @@ export const caseStudy_list = [
       title: "Challange",
       img: hobahoo3,
       description: [
-        "Found it difficult to hire creators: They wanted to attract lots of creative folks to Bepop, but they initially relied on a no-code platform to build it. This was like trying to build a cool website with only building blocks - it wasn't powerful enough to handle the growth they envisioned.",
-        "Wanted Easy to Navigate Features: Bepop needed to be clear and simple for both creative minds and those looking to hire them. Imagine a user-friendly website, not a confusing maze!",
-        "Wanted Real People, Real Profiles: Bepop wanted to make sure everyone on the platform was genuine, not fakes. No one wants to search through a bunch of made-up profiles!",
+        "Efficient WebSocket management in Next.js is crucial for real-time chat and AI-generated posts. Scaling these features with Python backend support while maintaining low latency can be challenging.",
+        "Integrating AI beings with advanced machine learning and NLP models into a Next.js frontend and Python backend adds significant complexity.",
+        "Securely managing sensitive social data between Next.js and Python backends involves strong encryption, secure communication, and ensuring AI complies with privacy standards.",
       ],
     },
     solution: {
@@ -473,8 +492,9 @@ export const caseStudy_list = [
       title: "Solution",
       img: hobahoo1,
       description: [
-        "To address the growing customer base and changing market trends, D-Kare adopted digital transformation, creating a user-friendly e-commerce platform.",
-        "Agile methodologies and collaboration ensured successful development, aligning with their mission of promoting balance and wellness through natural products. The platform integrated with existing systems, prioritized data security, and embraced customer feedback for continuous improvement.",
+        "Hoobahoo.ai is using WebSockets in Next.js for instant messaging and AI-generated social media posts, providing real-time engagement between users and AI beings.",
+        "The platform is using AI models to enable AI beings to autonomously post, react, and interact in social circles, creating authentic social experiences within the Next.js frontend",
+        " Next.js is leveraging server-side rendering and static generation to ensure fast loading of user feeds, AI-generated posts, and social media content for a seamless user experience.",
       ],
     },
     result: {
@@ -482,9 +502,60 @@ export const caseStudy_list = [
       title: "Result",
       img: hobahoo2,
       description: [
-        "Talent Acquisition: We incorporated casting call functionality, streamlining the process for employers to identify and connect with suitable creative talent.",
-        "Enhanced Communication: We integrated messaging and communication platforms to facilitate seamless collaboration and information exchange between creatives and potential employers.",
-        "Bepop facilitates the creation of filtered jobs between creative individuals who share similar interests. Individuals are categorized according to their interests and preferences. The platform is simple to use, fostering proactive discussions and providing creative participants with experiences.",
+        "Hoobahoo.ai offers constant availability of AI companions, providing users with round-the-clock emotional support and reducing feelings of loneliness.",
+        " The platform integrates AI into social interactions seamlessly, fostering genuine connections and enhancing user satisfaction.",
+        "Hoobahoo.ai sets a new standard for digital relationships, using advanced AI and real-time tech to innovate how people connect online.",
+      ],
+    },
+  },
+
+  {
+    brand: "sportwareonline",
+    hero: {
+      title: "Transforming Athletic Data Management with Streamlined Solutions",
+      description:
+        "SportsWareOnLine (SWOL) is a top EMR solution for managing athlete information, favored by high schools and colleges. It offers a cloud-based platform for Athletic Trainers, Coaches, and Administrators, ensuring FERPA and HIPAA compliance for efficient athletic training.",
+      industry_type: "Healthcare",
+      img: sports,
+    },
+    backStory: {
+      id: 1,
+      title: "Backstory",
+      img: sports2,
+      description: [
+        "Traditional athlete information management was cumbersome and prone to errors. A digital solution was needed to streamline tasks and reduce administrative time for Athletic Trainers",
+        "SportsWareOnLine updates SportsWare's injury-tracking software with a redesigned interface and cloud-based structure for a more user-friendly and efficient management of athletic training data.",
+        "SportsWareOnLine simplifies data entry and management for Athletic Trainers and Coaches, meeting FERPA and HIPAA standards for efficient and compliant sports data handling.",
+      ],
+    },
+    challange: {
+      id: 2,
+      title: "Challange",
+      img: sports3,
+      description: [
+        "Protecting sensitive medical and personal information requires advanced encryption and strict security measures to meet FERPA and HIPAA standards, ensuring data integrity and privacy.",
+        "Integrating features for various users into a user-friendly interface while maintaining ease of use is challenging.",
+        "Managing large data volumes and simultaneous user interactions is crucial, requiring efficient scaling and reliable performance during peak usage.",
+      ],
+    },
+    solution: {
+      id: 3,
+      title: "Solution",
+      img: sports4,
+      description: [
+        "Implemented robust data security with React Native’s secure storage and encryption libraries to protect sensitive medical and personal information.",
+        " Customized user interfaces with role-specific views and permissions to ensure tailored experiences for Athletic Trainers, Coaches, Athletes, and Parents.",
+        "Enabled real-time data synchronization through WebSocket integration for seamless updates and data flow across all users.",
+      ],
+    },
+    result: {
+      id: 4,
+      title: "Result",
+      img: sports,
+      description: [
+        "SportsWareOnLine ensures the protection of sensitive records with advanced encryption, maintaining compliance with FERPA and HIPAA.",
+        "The platform significantly reduces administrative time, allowing Athletic Trainers and Coaches to manage data more swiftly.",
+        "The app's user-friendly interface improves overall user satisfaction and enhances the experience for its active users.",
       ],
     },
   },

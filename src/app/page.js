@@ -115,9 +115,12 @@ export default function Home() {
                       <span>{item.details.tag}</span>
                     </div>
                     <div className="case-study-bx-title">
-                      <a href="#" className="text-decoration-none">
+                      {/* <a href="#" className="text-decoration-none">
                         <span>{item.details.title}</span>
-                      </a>
+                      </a> */}
+                      <a href="#" class="text-decoration-none">
+  <span class="two-line-title">{item.details.title}</span>
+</a>
                       <ul className="tech-tags">
                         {item.details.tech_tag.map((item, index) => (
                           <li key={index}>{item}</li>
