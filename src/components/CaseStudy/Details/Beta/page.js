@@ -20,7 +20,7 @@ const Beta = ({ id, name, description, image }) => {
       <section id="cs-result" style={{ marginBottom: 60 }}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-sm-6 col-xs-12 col-12">
+            <div className="col-lg-6 col-sm-6 col-xs-12 col-12 ">
               <ul className="circle-list-style">
                 {description?.map((des, index) => (
                   <div style={{ display: "flex" }} key={index}>
@@ -41,8 +41,6 @@ const Beta = ({ id, name, description, image }) => {
                 priority="true"
                 className="img-fluid"
                 src={image}
-                width={300}
-                height={300}
                 style={{
                   objectFit: "cover",
                   width: "100%",
@@ -50,7 +48,6 @@ const Beta = ({ id, name, description, image }) => {
                   maxWidth: "100vw",
                   maxHeight: "auto",
                 }}
-             
               />
             </div>
           </div>

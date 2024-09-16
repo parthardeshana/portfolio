@@ -26,10 +26,15 @@ import PHYSIO4 from "@/assets/images/Portfolio/physio-cafe/P4.png";
 import PHYSIO5 from "@/assets/images/Portfolio/physio-cafe/P5.png";
 
 import bepop from "@/assets/images/Portfolio/Bepop/bepop.png";
-import bepop2 from "@/assets/images/Portfolio/Bepop/bepop2.png";
-import bepop3 from "@/assets/images/Portfolio/Bepop/bepop3.png";
-import bepop4 from "@/assets/images/Portfolio/Bepop/bepop4.png";
-import bepop5 from "@/assets/images/Portfolio/Bepop/bepop5.png";
+import bepop2 from "@/assets/images/Portfolio/Bepop/bepop-2.png";
+import bepop3 from "@/assets/images/Portfolio/Bepop/bepop-3.png";
+import bepop4 from "@/assets/images/Portfolio/Bepop/bepop-4.png";
+import bepop5 from "@/assets/images/Portfolio/Bepop/bepop-3.png";
+
+import hobahoo from "@/assets/images/Portfolio/hobahoo/hobahoo.png";
+import hobahoo1 from "@/assets/images/Portfolio/hobahoo/hoobahoo1.png";
+import hobahoo2 from "@/assets/images/Portfolio/hobahoo/hoobahoo2.png";
+import hobahoo3 from "@/assets/images/Portfolio/hobahoo/hoobahoo3.png";
 
 export const case_study_data = [
   {
@@ -38,7 +43,7 @@ export const case_study_data = [
       img: ENTER,
       alt: "enter",
       tag: "Entertainment",
-      title: "A Smart Cutting board with live classes firmware",
+      title: "Bossalabs - Where Music Begin",
       tech_tag: ["React", "Python", "Django", "Metrial UI"],
       pathname: "bossalabs",
       description:
@@ -52,7 +57,7 @@ export const case_study_data = [
       img: EDTECH_CARD_HERO,
       alt: "edtech card hero",
       tag: "Ed-tech",
-      title: "Level up your coding skills with nextgen tutorial",
+      title: "Nextgen Tutorial - Level Up Coding Skill",
       tech_tag: ["React", "Python", "Django"],
       pathname: "nextgen",
       description:
@@ -66,7 +71,7 @@ export const case_study_data = [
       img: ECOM1,
       alt: "ecom1",
       tag: "E-commerce",
-      title: "Nourish your life naturally - D-kare",
+      title: "D-kare - E-commerce Web Application",
       tech_tag: ["Next", "Node"],
       pathname: "d-kare",
       description:
@@ -74,13 +79,14 @@ export const case_study_data = [
     },
     isSelected: false,
   },
+
   {
     name: "Church Managment System",
     details: {
       img: CHURCH,
       alt: "church",
       tag: "Communication",
-      title: "Church Managment System",
+      title: "TextInchurch - Church Texting Service",
       tech_tag: ["React", "PHP"],
       pathname: "text-in-church",
       description:
@@ -95,7 +101,7 @@ export const case_study_data = [
       img: HEALTHCARE,
       alt: "healthcare",
       tag: "Healthcare & Wellness",
-      title: "Crafting a Healthier Tomorrow for You - PhysioCafe",
+      title: "Physiocafe - Healthcare Management System",
       tech_tag: ["React", "Node"],
       pathname: "physiocafe",
       description:
@@ -109,11 +115,25 @@ export const case_study_data = [
       img: bepop,
       alt: "enter",
       tag: "Entertainment",
-      title: "Connecting Creatives with Work",
+      title: "Bepop - Entertainment Industry Talent Hiring Platform",
       tech_tag: ["JAvascript", "next.js", "aws", "Mongodb"],
       pathname: "bepop",
       description:
         "Bepop is a website that connects freelance creative professionals with employers. It allows employers to browse profiles and post opportunities, while creatives can create profiles and apply for jobs. In short, it's a platform for creative freelancers to find work. Bepop’s main goal was to create a community engagement platform that recognized creative people's preferences and paired the appropriate creatives with the job. Easy-to-use features were also included so that job posters could effortlessly find the right person.",
+    },
+    isSelected: false,
+  },
+  {
+    name: "Entertainment",
+    details: {
+      img: hobahoo,
+      alt: "enter",
+      tag: "Communication",
+      title: "Hoobahoo - Connecting Humans and AI Beings",
+      tech_tag: ["Javascript", "next.js", "React js", "Node js", "aws"],
+      pathname: "hoobahoo",
+      description:
+        "Hoobahoo is a dynamic social platform designed for real-time conversations",
     },
     isSelected: false,
   },
@@ -410,6 +430,57 @@ export const caseStudy_list = [
       id: 4,
       title: "Result",
       img: bepop2,
+      description: [
+        "Talent Acquisition: We incorporated casting call functionality, streamlining the process for employers to identify and connect with suitable creative talent.",
+        "Enhanced Communication: We integrated messaging and communication platforms to facilitate seamless collaboration and information exchange between creatives and potential employers.",
+        "Bepop facilitates the creation of filtered jobs between creative individuals who share similar interests. Individuals are categorized according to their interests and preferences. The platform is simple to use, fostering proactive discussions and providing creative participants with experiences.",
+      ],
+    },
+  },
+
+  {
+    brand: "hoobahoo",
+    hero: {
+      title:
+        "Hoobahoo is a dynamic social platform designed for real-time conversations",
+      description:
+        "Hoobahoo is a modern chat-driven platform that brings people together for real-time conversations. Designed for quick and concise communication, users can post short updates, join live discussions, and follow trending hashtags or topics that resonate with their interests.",
+      industry_type: "Communication",
+      img: hobahoo1,
+    },
+    backStory: {
+      id: 1,
+      title: "Backstory",
+      img: hobahoo2,
+      description: [
+        "A community building enthusiast was hit by frustration again. Another rejection email. All that design work, wasted? Friends in tech got jobs easy with websites like LinkedIn. Why not something for creative people?",
+        "A place where people who hire see your unique style, not just words on a page. A place to show off your work the way you want.",
+        "This wasn't just one person's problem. Designers, photographers, everyone creative - they all felt it. No good platform, just a big empty space.",
+      ],
+    },
+    challange: {
+      id: 2,
+      title: "Challange",
+      img: hobahoo3,
+      description: [
+        "Found it difficult to hire creators: They wanted to attract lots of creative folks to Bepop, but they initially relied on a no-code platform to build it. This was like trying to build a cool website with only building blocks - it wasn't powerful enough to handle the growth they envisioned.",
+        "Wanted Easy to Navigate Features: Bepop needed to be clear and simple for both creative minds and those looking to hire them. Imagine a user-friendly website, not a confusing maze!",
+        "Wanted Real People, Real Profiles: Bepop wanted to make sure everyone on the platform was genuine, not fakes. No one wants to search through a bunch of made-up profiles!",
+      ],
+    },
+    solution: {
+      id: 3,
+      title: "Solution",
+      img: hobahoo1,
+      description: [
+        "To address the growing customer base and changing market trends, D-Kare adopted digital transformation, creating a user-friendly e-commerce platform.",
+        "Agile methodologies and collaboration ensured successful development, aligning with their mission of promoting balance and wellness through natural products. The platform integrated with existing systems, prioritized data security, and embraced customer feedback for continuous improvement.",
+      ],
+    },
+    result: {
+      id: 4,
+      title: "Result",
+      img: hobahoo2,
       description: [
         "Talent Acquisition: We incorporated casting call functionality, streamlining the process for employers to identify and connect with suitable creative talent.",
         "Enhanced Communication: We integrated messaging and communication platforms to facilitate seamless collaboration and information exchange between creatives and potential employers.",

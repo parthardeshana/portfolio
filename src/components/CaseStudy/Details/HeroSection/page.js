@@ -31,8 +31,6 @@ const HeroSection = ({
                   <Image
                     alt=""
                     src={PrimaryImage}
-                    width={300}
-                    height={300}
                     style={{
                       objectFit: "cover",
                       width: "100%",
@@ -42,7 +40,6 @@ const HeroSection = ({
                     }}
                   />
                 </Box>
-          
               </div>
             </div>
           </div>
