@@ -30,7 +30,7 @@ export default function Header() {
               className="fs-5 fw-bold text-uppercase"
               aria-label="brandlogo"
             >
-              <span style={{ color: "#f36d45" }}>Full Stack</span> Developer
+              <span style={{ color: "#f36d45" }}>Frontend</span> Developer
             </span>
           </Link>
           <button
